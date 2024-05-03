@@ -58,3 +58,71 @@ params:{username,insurance}
 <h5>All Data</h5>
 http://localhost:3000/remove/profile : POST 
 params:{username,password}
+
+<h3>Add Patients</h3>
+<h5>all profile</h5>
+http://localhost:3000/addPatient/profile : POST 
+params:{patient_name,hospital_name,age}
+<h5>doctors</h5>
+http://localhost:3000/addPatient/doctors : POST 
+params:{patient_name,doctor}
+<h5>specialists</h5>
+http://localhost:3000/addPatient/specialists : POST 
+params:{patient_name,specialist}
+<h5>insurance</h5>
+http://localhost:3000/addPatient/insurance : POST 
+params:{patient_name,insurance}
+<h5>review</h5>
+http://localhost:3000/addPatient/review: POST 
+params:{patient_name,reviews}
+
+<h3>Get Data</h3>
+<h5>all profile</h5>
+http://localhost:3000/getData/institution/profile : GET 
+params:{username}
+<h5>Hospital_Name</h5>
+http://localhost:3000/getData/institution/Hospital_Name : GET 
+params:{Username}
+<h5>Locations</h5>
+http://localhost:3000/getData/institution/Locations : GET 
+params:{username}
+<h5>Specialists</h5>
+http://localhost:3000/getData/institution/Specialists : GET 
+params:{username}
+<h5>Doctors</h5>
+http://localhost:3000/getData/institution/Doctors : GET 
+params:{username}
+<h5>Reviews</h5>
+http://localhost:3000/getData/institution/Reviews : GET 
+params:{username}
+<h5>Testing_facilities</h5>
+http://localhost:3000/getData/institution/Testing_facilities : GET 
+params:{username}
+<h5>availability</h5>
+http://localhost:3000/getData/institution/availability : GET 
+params:{username}
+<h5>InsuranceAccepted</h5>
+http://localhost:3000/getData/institution/InsuranceAccepted : GET 
+params:{username}
+<br>
+<h5>profile</h5>
+http://localhost:3000/getData/patient/profile : GET 
+params:{username}
+<h5>hospital_name</h5>
+http://localhost:3000/getData/patient/hospital_name : GET 
+params:{username}
+<h5>age</h5>
+http://localhost:3000/getData/patient/age : GET 
+params:{username}
+<h5>doctors</h5>
+http://localhost:3000/getData/patient/doctors : GET 
+params:{username}
+<h5>specialists</h5>
+http://localhost:3000/getData/patient/specialists : GET 
+params:{username}
+<h5>reviews</h5>
+http://localhost:3000/getData/patient/reviews : GET 
+params:{username}
+<h5>insurance</h5>
+http://localhost:3000/getData/patient/insurance : GET 
+params:{username}
